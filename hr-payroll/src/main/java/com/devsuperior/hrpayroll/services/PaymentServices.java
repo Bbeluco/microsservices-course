@@ -1,6 +1,6 @@
 package com.devsuperior.hrpayroll.services;
 
-import com.devsuperior.hrpayroll.controllers.WorkerEntity;
+import com.devsuperior.hrpayroll.entitites.WorkerEntity;
 import com.devsuperior.hrpayroll.entitites.PaymentEntity;
 import com.devsuperior.hrpayroll.feignclients.WorkerFeignClient;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,6 +1,6 @@
 package com.devsuperior.hrpayroll.feignclients;
 
-import com.devsuperior.hrpayroll.controllers.WorkerEntity;
+import com.devsuperior.hrpayroll.entitites.WorkerEntity;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;

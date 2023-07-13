@@ -1,4 +1,4 @@
-package com.devsuperior.hrpayroll.controllers;
+package com.devsuperior.hrpayroll.entitites;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

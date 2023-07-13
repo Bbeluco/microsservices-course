@@ -34,6 +34,13 @@ public class WorkerControllers {
 
     @GetMapping(path = "/{id}")
     private ResponseEntity<WorkerEntity> findWorkerById(@PathVariable Long id){
+//        try {
+//            Thread.sleep(3000);
+//        } catch (InterruptedException e) {
+//            throw new RuntimeException(e);
+//        }
+//        This code was added to test hystrix fallback timeout
+
         logger.warn("PORT = " + env.getProperty("local.server.port"));
 
         Optional<WorkerEntity> worker = workerRepository.findById(id);
