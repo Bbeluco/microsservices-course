@@ -1,6 +1,7 @@
 package com.devsuperior.hruser.entities;
 
 import lombok.AllArgsConstructor;
+import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
@@ -9,6 +10,7 @@ import javax.persistence.*;
 @Table(name = "tb_role")
 @NoArgsConstructor
 @AllArgsConstructor
+@Data
 public class RoleEntity {
 
     @Id
