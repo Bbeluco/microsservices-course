@@ -1,6 +1,5 @@
 package com.devsuperior.hroauth.DTOs;
 
-import lombok.*;
 
 public class RoleEntity {
 
