@@ -22,8 +22,8 @@ import java.util.Optional;
 public class WorkerControllers {
     private Logger logger = LoggerFactory.getLogger(WorkerControllers.class);
 
-    @Value("${hr-worker-test.config}")
-    private String configs;
+//    @Value("${hr-worker-test.config}")
+//    private String configs;
 
     @Autowired
     private Environment env;
@@ -33,7 +33,7 @@ public class WorkerControllers {
 
     @GetMapping(value = "/configs")
     private ResponseEntity<Void> getWorkerConfigs(){
-       logger.info("CONFIG = " + configs);
+//       logger.info("CONFIG = " + configs);
         return ResponseEntity.noContent().build();
     }
 
