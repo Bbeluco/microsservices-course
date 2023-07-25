@@ -2,11 +2,13 @@ package com.devsuperior.hroauth.DTOs;
 
 
 import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 public class UserEntity implements UserDetails {
 
@@ -55,7 +57,8 @@ public class UserEntity implements UserDetails {
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        return null;
+        return roles.stream().map(x -> new SimpleGrantedAuthority(x.getRoleName()))
+                .collect(Collectors.toList());
     }
 
     public String getPassword() {
